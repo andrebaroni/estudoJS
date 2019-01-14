@@ -1,6 +1,7 @@
 //ex3 
 
-function bomba(vazao, cap){
+
+var bomba = (vazao, cap) => {
     //vazao litros por segundo
     //cap em litros
     var s = cap/vazao // segundos
@@ -10,5 +11,4 @@ function bomba(vazao, cap){
     console.log("Minutos: " +m)
     console.log("Horas: "+h)
 }
-
 console.log(bomba(4, 2000))

@@ -1,21 +1,13 @@
-function real(troco){
-    
-    return troco - 1.00
-}
 
-function cent50(a){
-    return parseFloat((a - 0.50).toFixed(2))
-}
+const real = troco => troco - 1.00
 
-function cent10(a){
-    return a - 0.1
-}
-function cent1(a){
-    return a - 0.01
-}
+const cent50 = a => parseFloat((a - 0.50).toFixed(2))
 
+const cent10 = a => a - 0.1
 
-function metro (cobra, fornecido){
+const cent1 = a => a - 0.01
+
+const metro = (cobra, fornecido) => {
     var troco = 0
     troco = fornecido - cobra
     if (troco == 0){
@@ -60,7 +52,6 @@ function metro (cobra, fornecido){
         i++
     }
     console.log(i + " moedas de 1 centavo")
-    
 }
 
 metro(4, 6.1)

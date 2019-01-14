@@ -1,10 +1,10 @@
 //ex2
 
-function p(preco, percentual){
-    var valor
+
+var p = (preco, percentual) => {
     preco = preco + (preco*percentual)
-    valor = preco
-    return valor
+    
+    return preco
 }
 
 console.log(p(10, 0.1))
