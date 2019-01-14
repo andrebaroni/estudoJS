@@ -1,12 +1,12 @@
 
+var array = [10,20,30,40,50];
 
-var x = function(){
-    var that = this;
-    this.val = 1;
-    setTimeout(function(){
-        that.val++;
-        console.log(this.val)
-    }, 1)
-};
 
-var xx = new x();
+var opa = n => n*n
+
+var elevado2 = array.map(opa)
+
+
+
+console.log(elevado2) 
+
