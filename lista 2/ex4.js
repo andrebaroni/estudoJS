@@ -1,0 +1,66 @@
+function real(troco){
+    
+    return troco - 1.00
+}
+
+function cent50(a){
+    return parseFloat((a - 0.50).toFixed(2))
+}
+
+function cent10(a){
+    return a - 0.1
+}
+function cent1(a){
+    return a - 0.01
+}
+
+
+function metro (cobra, fornecido){
+    var troco = 0
+    troco = fornecido - cobra
+    if (troco == 0){
+        console.log("Sem troco")
+    }
+
+    //for i
+    var i = 0
+    while(troco >= 1){
+
+        //real(troco)
+        troco = real(troco)
+        //troco = troco - 1
+      
+        i++
+    }
+    console.log(i + " moedas de 1 real")
+    
+    i = 0
+    while (troco >= 0.5){
+            
+            troco = parseFloat(cent50(troco).toFixed(2))
+            //troco = troco - 0.5
+            i++
+    }
+    console.log(i + " moedas de 50 centavos")
+    
+    i = 0
+    //console.log(troco)
+    while(troco >= 0.10 ){
+
+        troco = cent10(troco)
+        //troco = troco - 0.1
+        i++
+    }
+    console.log(i + " moedas de 10 centavos")
+  
+    i = 0
+    while(troco > 0){
+        troco = cent1(troco)
+        //troco = troco - 0.01
+        i++
+    }
+    console.log(i + " moedas de 1 centavo")
+    
+}
+
+metro(4, 6.1)
