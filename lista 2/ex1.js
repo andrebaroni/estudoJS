@@ -7,3 +7,7 @@ function convert(dolar, cotacao){
 }
 
 console.log(convert(20, 3))
+
+function a(a){
+    return a
+}
